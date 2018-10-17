@@ -1,0 +1,109 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f55858;
+
+}
+.morpion{
+  width: 700px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: #003659;
+}
+
+.row{
+  flex: 1;
+  display: flex;
+}
+
+.cell{
+  flex: 1;
+  border: 1px solid #00f99f;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+.tst{
+  display:flex;
+  font-size: 90px;
+  color: #ffffff;
+}
+.container {
+  padding: 2em;
+}
+
+/* GENERAL BUTTON STYLING */
+a,
+a::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+a {
+  background: none;
+  border: 3px solid #ffcf00;
+  border-radius: 5px;
+  color: #ffcf00;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 2em 6em;
+  position: relative;
+  text-decoration: none;
+}
+
+a::before,
+a::after {
+  background: #ffcf00;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+a:hover {
+  color: #ffff;
+}
+
+
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
+
+.cercle{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/checked.png);
+  background-position: center;
+}
+
+.croix{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/cross.png);
+  background-position: center;
+}
